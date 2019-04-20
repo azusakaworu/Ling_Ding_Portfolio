@@ -1,0 +1,94 @@
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Srisakdi', cursive;
+
+*/
+
+/* basic seeting */
+.gradientBG {
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+}
+.lighter {
+  font-weight: 100;
+}
+
+.titleFonts {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+}
+
+/* about me */
+#aboutMe {
+  display: flex;
+  justify-content: center;
+}
+#aboutMe > div {
+  text-align: center;
+}
+
+
+
+/* .box{
+    box-sizing: border-box;
+    box-sizing:content-box; 
+    border: thick double  rgba(238, 174, 202, 1);
+    background-color: pink;
+    border: 5px solid  rgba(238, 174, 202, 1);
+    width: 70%;
+} */
+
+/* HOME CONTACT */
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer > div > p {
+  text-align: center;
+}
+
+
+/* lightbox */
+.lightbox {
+	/* display: none; */
+	position: absolute;
+	top: 0;
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+	background-color: rgba(0,0,0,0.55);
+}
+
+.close-lightbox {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+.show-lightbox { display: block; }
