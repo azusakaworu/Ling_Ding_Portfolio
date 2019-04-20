@@ -23,7 +23,7 @@
     <h2>About Me</h2>
     <div id="aboutMe">
       <div >
-          <img src="images/196.png" alt="" width="60%">
+          <img class="show" src="images/196.png" alt="" width="60%">
           <h4>Front-end Develepment</h4>
           <p>Bootstrap: <a href="">Projects link</a></p>
           <p>Foundation: <a href="">Projects link</a></p>
@@ -32,7 +32,7 @@
 
 
       <div>
-          <img  src="images/196.png" alt="" width="60%">
+          <img class="show" src="images/196.png" alt="" width="60%">
           <h4>Back-end Develepment</h4>
           <p>CMS:<a href="">Projects link</a></p>
           <p>MySQL: <a href="">Projects link</a></p>
@@ -41,7 +41,7 @@
 
 
       <div>
-          <img   src="images/196.png" alt="" width="60%">
+          <img class="show"  src="images/196.png" alt="" width="60%">
           <h4>Design & Photoshop</h4>
           <p>Layout: <a href="">Projects link</a></p>
           <p>Icon: <a href="">Projects link</a></p>

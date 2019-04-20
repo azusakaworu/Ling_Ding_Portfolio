@@ -71,7 +71,7 @@ footer > div > p {
 
 /* lightbox */
 .lightbox {
-	/* display: none; */
+	display: none;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -81,6 +81,7 @@ footer > div > p {
 }
 
 .close-lightbox {
+    /* x */
 	position: absolute;
 	right: 12px;
 	top: 12px;
@@ -90,5 +91,5 @@ footer > div > p {
 	color: white;
 	cursor: pointer;
 }
+.show{cursor: pointer;}
 
-.show-lightbox { display: block; }
