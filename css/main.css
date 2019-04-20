@@ -5,6 +5,14 @@ font-family: 'Srisakdi', cursive;
 */
 
 /* basic seeting */
+a{text-decoration-line: none;color: black;}
+a:hover{
+    color: gray
+}
+ul{list-style-type: none;}
+.hidden {
+  display: none;
+}
 .gradientBG {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
@@ -34,6 +42,57 @@ h5 {
   font-weight: 400;
 }
 
+/* menu */
+#topWeb {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  
+}
+#logo {
+  font-family: "Srisakdi", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  color: #204e5f;
+  
+}
+#mainMenu {
+  display: block;
+  background-color: pink;
+  width: 20%;
+}
+
+#menuIcon {
+  margin-left: 2em;
+  width: 3em;
+  cursor: pointer;
+}
+#socialMedia li{
+    display: inline;
+    margin-right: 1em;
+  
+
+}
+#menuMask{
+    display:none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+
+}
+#fullScreenMenu li a{
+    color: white;
+}
+#fullScreenMenu li a:hover{color: red}
+#socialMedia{
+     
+   
+    margin-right: 2em;
+}
 /* about me */
 #aboutMe {
   display: flex;
@@ -42,8 +101,6 @@ h5 {
 #aboutMe > div {
   text-align: center;
 }
-
-
 
 /* .box{
     box-sizing: border-box;
@@ -68,28 +125,31 @@ footer > div > p {
   text-align: center;
 }
 
-
 /* lightbox */
 .lightbox {
-	display: none;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	/* height: 100%; */
-	text-align: center;
-	background-color: rgba(0,0,0,0.55);
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .close-lightbox {
-    /* x */
-	position: absolute;
-	right: 12px;
-	top: 12px;
-	font-family: arial, helvetica, sans-serif;
-	font-size: 2em;
-	font-weight: bold;
-	color: white;
-	cursor: pointer;
+  /* x */
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
-.show{cursor: pointer;}
-
+.close-lightbox:hover {
+  color: pink;
+}
+.show {
+  cursor: pointer;
+}
