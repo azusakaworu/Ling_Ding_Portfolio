@@ -1,6 +1,6 @@
 const
-menuIcon=document.querySelector('#menuIcon'),
-menuMask = document.querySelector('#menuMask'),
+    menuIcon = document.querySelector('#menuIcon'),
+    menuColumn = document.querySelector('#menuColumn'),
 
     lightbox = document.querySelector('.lightbox'),
     showLightbox = document.querySelectorAll('.show'),
@@ -10,8 +10,8 @@ function closeLBox() {
     lightbox.style.display = "none";
 }
 
-function closeMenu(e){
-    menuMask.style.display="none";
+function closeMenu(e) {
+    // .style.width="";
 
 }
 
@@ -24,13 +24,13 @@ for (let i = 0; i < showLightbox.length; i++) {
         });
 }
 
-function openMenu(){
-    menuMask.style.display = "block";
+function openMenu() {
+
 
 }
 
 
 
 closeLightbox.addEventListener('click', closeLBox);
-menuIcon.addEventListener('click',openMenu);
-menuMask.addEventListener('click',closeMenu);
+menuIcon.addEventListener('click', openMenu);
+menuColumn.addEventListener('click', closeMenu);
