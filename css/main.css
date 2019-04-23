@@ -79,12 +79,21 @@ h5 {
   margin-left: 2em;
   width: 3em;
   cursor: pointer;
+  -webkit-filter: drop-shadow(2px 2px 2px gray);
+  filter: drop-shadow(2px 2px 2px gray);
+  transition: transform 0.2s;
 }
+
+#menuIcon:hover {
+  -webkit-filter: drop-shadow(4px 4px 4px gray);
+  filter: drop-shadow(4px 4px 4px gray);
+}
+
 #socialMedia li {
   display: inline;
   margin-right: 1em;
 }
-#fullScreenMask {
+/* #fullScreenMask {
   display: none;
   position: absolute;
   top: 6em;
@@ -92,10 +101,17 @@ h5 {
   height: 200%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.55);
-}
+} */
 #menuColumn {
   width: 20%;
-  background-color: bisque;
+  display: block;
+}
+.menuSpan {
+  font-size: 1.2em;
+  color: #797bbc;
+}
+.menuSpan a {
+  display: block;
 }
 
 #socialMedia {
@@ -112,10 +128,10 @@ h5 {
   text-align: center;
   font-size: 1.5em;
 }
-#introText{
+#introText {
   display: block;
   width: 60%;
-  
+
   margin: 0 auto;
 }
 button {
@@ -159,23 +175,55 @@ button:hover {
   text-decoration: underline;
 }
 
-
-
 /* projects */
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {background-color:#ebeef5 ;}
-
+tr:nth-child(even) {
+  background-color: #ebeef5;
+}
 
 /* HOME CONTACT */
+#contactForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content:center; */
+  justify-content: space-evenly;
+  padding-bottom: 3em;
+}
+#inputArea {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#Textarea {
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 #contactTitle {
   padding-top: 3em;
   color: white;
@@ -221,12 +269,21 @@ footer > div > p {
 }
 .show {
   cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px gray);
+  filter: drop-shadow(5px 5px 5px gray);
+  transition: transform 0.6s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 /* media query */
 /* Extra small devices (portrait phones, less than 576px) 
 @media (max-width: 575.98px) {
-  #banner,#aboutMe,#contact{
+  #banner,#aboutMe,#contactSection{
     display: flex;
     flex-direction: column;
   }
@@ -238,7 +295,7 @@ footer > div > p {
 @media (max-width: 767.98px) {
   #banner,
   #aboutMe,
-  #contact {
+  #contactSection {
     display: flex;
     flex-direction: column;
   }

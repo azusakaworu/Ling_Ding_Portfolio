@@ -28,7 +28,7 @@
         </p>
         <p>by <strong>Ling Ding</strong> 04/20/2019</p>
         <p>My GitHub for <a href="https://github.com/azusakaworu/Ling_Ding_Portfolio">Portfolio Website</a></p>
-            
+
         <button><a href="https://resume.io/r/1UhVxeC9S">DOWNLOAD RESUME</a></button>
 
 
@@ -37,11 +37,11 @@
 </section>
 
 <!-- self introduce -->
-<section >
+<section id="aboutSection" >
     <h2>About Me</h2>
     <div id="aboutMe">
       <div >
-          <img class="show" src="images/1.png" alt="" width="75%">
+          <img class="show zoom" src="images/1.png" alt="" width="75%">
           <h4>Front-end Develepment</h4>
           <p>Bootstrap: <a href="">Projects link</a></p>
           <p>Foundation: <a href="">Projects link</a></p>
@@ -50,7 +50,7 @@
 
 
       <div>
-          <img class="show" src="images/2.png" alt="" width="75%">
+          <img class="show zoom" src="images/2.png" alt="" width="75%">
           <h4>Back-end Develepment</h4>
           <p>CMS:<a href="">Projects link</a></p>
           <p>MySQL: <a href="">Projects link</a></p>
@@ -60,7 +60,7 @@
 
       <div>
 
-          <img class="show"  src="images/5.png" alt="" width="75%">
+          <img class="show zoom"  src="images/5.png" alt="" width="75%">
           <h4>Design & Photoshop</h4>
           <p>Layout: <a href="design.php">Projects link</a></p>
           <p>Icon: <a href="">Projects link</a></p>
@@ -91,7 +91,7 @@
 
 
 <!-- projects -->
-<section>
+<section id="projectsSection">
     <h2>Projects</h2>
 <!-- <ul>
     <li><a href="projects/github/github.html">GitHub</a></li>
@@ -151,30 +151,30 @@
 
 
 <!-- contact me -->
-<section class="gradientBG" id="contact">
+<section class="gradientBG" id="contactSection">
     <h2 id="contactTitle">Contact Me</h2>
-    <form  action="admin/contactform.php" method="post">
+    <p style="text-align: center;color:white;">I'd love to hear from You. Whether you would like to work with me or just interested in getting to know more of my skills.
+
+</p>
+
+    <form  action="admin/contactform.php" method="post" id="contactForm">
 
 
 
-<!-- Name -->
-<input type="text" id="FormName"  placeholder="Name" name="name">
+<div id="inputArea">
 
-<!-- Email -->
-<input type="email" id="FormEmail"  placeholder="E-mail" name="email">
-
-<input type="text" id="FormSubject"  placeholder="I would like to discuss with you ..." name="subject">
-
-
-
-<!-- Message -->
-<div class="form-group">
-    <textarea name="message" class="form-control rounded-0" id="Textarea" rows="3" placeholder="Message"></textarea>
+    <input type="text" id="FormName"  placeholder="Name" name="name">
+    <input type="email" id="FormEmail"  placeholder="E-mail" name="email">
+    <input type="text" id="FormSubject"  placeholder="I would like to discuss with you ..." name="subject">
 </div>
 
 
-<!-- Send button -->
- <button  type="submit" name="submit">Send</button>
+<div>
+<!-- rows="4" cols="50" -->
+    <textarea name="message" class="form-control rounded-0" id="Textarea" rows="8" cols="50" placeholder="Message"></textarea>
+     <button  type="submit" name="submit">Send</button>
+
+</div>
 
 
 </form>
