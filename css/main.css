@@ -43,6 +43,7 @@ h1,
 h2,
 h3,
 h5 {
+  
   text-align: center;
   font-family: "Cinzel", serif;
   font-weight: 700;
@@ -176,9 +177,15 @@ button:hover {
 }
 
 /* projects */
+
 table {
+  
   border-collapse: collapse;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+
+  
+   
 }
 
 th,
@@ -192,42 +199,44 @@ tr:nth-child(even) {
 }
 
 /* HOME CONTACT */
-#contactForm {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* justify-content:center; */
-  justify-content: space-evenly;
+form{
+  
+  text-align: center;
   padding-bottom: 3em;
 }
-#inputArea {
-  display: flex;
-  flex-direction: column;
+#formBack{
+ width: 70%;
+ display: block;
+ margin: 0 auto;
+ margin-top: 2em;
+ margin-bottom: -3em;
+  background-color:  rgba(255, 255, 255, 0.5); 
+  padding: 3em 2em;
+  
 }
-input {
-  margin-bottom: 2em;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+
+input,#Textarea,#submit {
+  margin: 0 auto;
+  margin: 1.5em;
+  width: 60%;
+  padding: 1.5em 3em;
+
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
-#Textarea {
-  margin-bottom: 2em;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+
+
 #contactTitle {
   padding-top: 3em;
   color: white;
 }
+#submit{
+  color: white;
+  width: 70%;
+}
+
 
 /* footer */
 footer {
@@ -295,11 +304,6 @@ footer > div > p {
 @media (max-width: 767.98px) {
   #banner,
   #aboutMe,
-  #contactSection {
-    display: flex;
-    flex-direction: column;
-  }
-
   #socialMedia {
     display: none;
   }

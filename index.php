@@ -92,7 +92,9 @@
 
 <!-- projects -->
 <section id="projectsSection">
-    <h2>Projects</h2>
+    
+        <h2>Projects</h2>
+    
 <!-- <ul>
     <li><a href="projects/github/github.html">GitHub</a></li>
     <li><a href="projects/foundation/foundation.html">foundation</a></li>
@@ -102,8 +104,8 @@
     <li><a href="projects/Vue/Vue.html">Vue</a></li>
     <li><a href="projects/jQuery/jQuery.html">jQuery</a></li>
 </ul> -->
-
-<table>
+<div>
+    <table>
   <th>Technology</th>
   <th>To Do</th>
   <th>Projects Link</th>
@@ -147,6 +149,8 @@
   </tr>
 </table>
 
+</div>
+
 </section>
 
 
@@ -157,27 +161,21 @@
 
 </p>
 
-    <form  action="admin/contactform.php" method="post" id="contactForm">
 
 
-
-<div id="inputArea">
-
-    <input type="text" id="FormName"  placeholder="Name" name="name">
+<form  action="admin/contactform.php" method="post">
+<div id="formBack">
+     <input type="text" id="FormName"  placeholder="Name" name="name">
     <input type="email" id="FormEmail"  placeholder="E-mail" name="email">
     <input type="text" id="FormSubject"  placeholder="I would like to discuss with you ..." name="subject">
+    <textarea name="message"  id="Textarea" rows="8" cols="50" placeholder="Message"></textarea>
+    <button  type="submit" name="submit" id="submit">Send</button>
 </div>
-
-
-<div>
-<!-- rows="4" cols="50" -->
-    <textarea name="message" class="form-control rounded-0" id="Textarea" rows="8" cols="50" placeholder="Message"></textarea>
-     <button  type="submit" name="submit">Send</button>
-
-</div>
-
-
+   
 </form>
+
+
+
 
 </section>
 
