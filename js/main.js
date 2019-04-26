@@ -33,9 +33,16 @@ function hoverImg(){
 
 }
 
+function toggleMenu(){
+    if(menuColumn.style.display="none"){
+        menuColumn.classList.add="show";
+    }else{
+        menuColumn.classList.remove="show";
+    }
+    
+}
 
 
-
-
+menuIcon.addEventListener('click',toggleMenu);
 closeLightbox.addEventListener('click', closeLBox);
 

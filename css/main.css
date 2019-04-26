@@ -2,6 +2,7 @@
 font-family: 'Cinzel', serif;
 font-family: 'Srisakdi', cursive;
 
+
 */
 
 /* color
@@ -13,6 +14,23 @@ blue  #00a9d1
 */
 
 /* basic seeting */
+#contactSection > p{
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: 2em auto;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-family: 'Cinzel', serif;
+ 
+}
+hr{
+  width: 5%;
+  display: block;
+  background-color: #797bbc;
+  height: 0.2em;
+  margin: 1em auto;
+}
 section {
   margin: 3em 0;
 }
@@ -28,7 +46,8 @@ ul {
   display: none;
 }
 .gradientBG {
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+
 }
 body {
   margin: 0;
@@ -105,7 +124,7 @@ h5 {
 } */
 #menuColumn {
   width: 20%;
-  display: block;
+  display: none;
 }
 .menuSpan {
   font-size: 1.2em;
@@ -155,6 +174,16 @@ button:hover {
   background-color: #ebeef5;
 }
 
+input:focus,textarea:focus,
+
+button:focus {
+  border-color: #ebeef5 ;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #797bbc;
+  outline: 0 none;
+}
+
+input:hover,textarea:hover{}
+
 /* about me */
 #aboutMe {
   display: flex;
@@ -183,8 +212,6 @@ table {
   border-collapse: collapse;
   margin: 0 auto;
   width: 90%;
-
-  
    
 }
 
@@ -208,8 +235,8 @@ form{
  width: 70%;
  display: block;
  margin: 0 auto;
- margin-top: 2em;
- margin-bottom: -3em;
+ 
+
   background-color:  rgba(255, 255, 255, 0.5); 
   padding: 3em 2em;
   
@@ -220,7 +247,6 @@ input,#Textarea,#submit {
   margin: 1.5em;
   width: 60%;
   padding: 1.5em 3em;
-
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -230,7 +256,7 @@ input,#Textarea,#submit {
 
 #contactTitle {
   padding-top: 3em;
-  color: white;
+ 
 }
 #submit{
   color: white;

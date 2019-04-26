@@ -40,7 +40,8 @@
 <section id="aboutSection" >
     <h2>About Me</h2>
     <div id="aboutMe">
-      <div >
+
+      <div>
           <img class="show zoom" src="images/1.png" alt="" width="75%">
           <h4>Front-end Develepment</h4>
           <p>Bootstrap: <a href="">Projects link</a></p>
@@ -155,12 +156,13 @@
 
 
 <!-- contact me -->
-<section class="gradientBG" id="contactSection">
+<section  id="contactSection">
     <h2 id="contactTitle">Contact Me</h2>
-    <p style="text-align: center;color:white;">I'd love to hear from You. Whether you would like to work with me or just interested in getting to know more of my skills.
+    
+    <hr>
+<p>I'd love to hear from You. &nbsp;&nbsp;ก(ｰ̀ωｰ́ก) 
 
 </p>
-
 
 
 <form  action="admin/contactform.php" method="post">
